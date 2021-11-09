@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Practicing</string>
+    <string name="titulo">Flash</string>
+    <string name="nombre">Name:</string>
+    <string name="nombre_flash">Barry Allen</string>
+    <string name="poderes">Powers:</string>
+    <string name="flash_powers">Super speed, time travel, healing.</string>
+<!--jaskjsa-->
+</resources>
