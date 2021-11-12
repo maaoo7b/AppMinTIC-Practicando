@@ -6,5 +6,7 @@
     <string name="nombre_flash">Barry Allen</string>
     <string name="poderes">Powers:</string>
     <string name="flash_powers">Super speed, time travel, healing.</string>
-<!--jaskjsa-->
+    <string name="registro">Registro de Superheroes</string>
+    <string name="registrar">Registrar</string>
+    <!--jaskjsa-->
 </resources>
