@@ -1,19 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Practicando</string>
+    <string name="app_name">Practicing</string>
     <string name="titulo">Flash</string>
-    <string name="nombre">Nombre:</string>
+    <string name="nombre">Name:</string>
     <string name="nombre_flash">Barry Allen</string>
-    <string name="poderes">Poderes:</string>
-    <string name="flash_powers">Super velocidad, viaje en el tiempo, sanación.</string>
+    <string name="poderes">Powers:</string>
+    <string name="flash_powers">Super speed, time travel, healing.</string>
     <string name="registro">Registro de Superheroes</string>
     <string name="registrar">Registrar</string>
     <string name="estatura">Estatura</string>
-    <string name="genero">Género:</string>
     <string name="masculino">Masculino</string>
+    <string name="genero">Género:</string>
     <string name="femenino">Femenino</string>
     <string name="info">Nombre: %s \n, Estatura: %f \n, Género: %s \n, Poderes: %s \n, Ciudad: %s</string>
     <string name="super_fuerza">Super fuerza</string>
-    <string name="velocidad">Super velocidad</string>
+    <string name="velocidad">Supervelocidad</string>
     <string name="telequinesis">Telequinésis</string>
     <string name="ciudad">Ciudad:</string>
     <string-array name="ciudades">
@@ -22,4 +23,5 @@
         <item> Metrópolis</item>
         <item> Temiscira</item>
     </string-array>
+    <!--jaskjsa-->
 </resources>
