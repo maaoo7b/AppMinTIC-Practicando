@@ -1,10 +1,10 @@
 package com.bMao.appmintic_practicando
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
+import android.widget.*
+import com.google.android.material.textfield.TextInputEditText
 
 
 class RegistroSuperheroeActivity : AppCompatActivity() {
@@ -12,15 +12,39 @@ class RegistroSuperheroeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registro_superheroe)
 
+        val infoTextView : TextView = findViewById(R.id.info_text_view)
         val registrarButton : Button = findViewById(R.id.registrar_button)
-        var nombreEditText : EditText = findViewById(R.id.nombre_edit_text)
-        var infoTextView : TextView = findViewById(R.id.info_text_view)
+        //Info
+        val nombreEditText : EditText = findViewById(R.id.nombre_edit_text)
+        val estaturaEditText : TextInputEditText = findViewById(R.id.estatura_edit_text)
+        val masculinoRadioButton : RadioButton = findViewById(R.id.masculino_radio_button)
+        val femeninoRadioButton : RadioButton = findViewById(R.id.femenino_radio_button)
+        val fuerzaCheckBox : CheckBox = findViewById(R.id.super_fueza_checkbox)
+        val velocidadCheckBox : CheckBox = findViewById(R.id.velocidad_check_box)
+        val telequinesisCheckBox : CheckBox = findViewById(R.id.telequinesis_checkbox)
+        val ciudadSpinner: Spinner = findViewById(R.id.ciudad_spinner)
 
         registrarButton.setOnClickListener{
-            val nombre = nombreEditText.text
-            infoTextView.text = nombre
+            if(estaturaEditText.text.toString() == ""){
+                estaturaEditText.error = "Digite la estatura"
+            }
+            if(nombreEditText.text.isEmpty()){
+                Toast.makeText(this,"Debe digitar un nombre y estatura",Toast.LENGTH_LONG).show()
+            }else{
+                val nombre = nombreEditText.text
+                val estatura : Float = estaturaEditText.text.toString().toFloat()
+                var poderes = ""
+                val ciudad = ciudadSpinner.selectedItem.toString()
+                val genero = if(masculinoRadioButton.isChecked) getString(R.string.masculino) else getString(R.string.femenino)
+                if (fuerzaCheckBox.isChecked) poderes = getString(R.string.super_fuerza)
+                if (velocidadCheckBox.isChecked) poderes = poderes +" "+ getString(R.string.velocidad)
+                if (telequinesisCheckBox.isChecked) poderes+= poderes +" "+ getString(R.string.telequinesis)
 
+                infoTextView.text = getString(R.string.info, nombre, estatura, genero, poderes, ciudad)
+
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+            }
         }
-
     }
 }

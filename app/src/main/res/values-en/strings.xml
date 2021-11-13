@@ -8,5 +8,20 @@
     <string name="flash_powers">Super speed, time travel, healing.</string>
     <string name="registro">Registro de Superheroes</string>
     <string name="registrar">Registrar</string>
+    <string name="estatura">Estatura</string>
+    <string name="masculino">Masculino</string>
+    <string name="genero">Género:</string>
+    <string name="femenino">Femenino</string>
+    <string name="info">Nombre: %s \n, Estatura: %f \n, Género: %s \n, Poderes: %s \n, Ciudad: %s</string>
+    <string name="super_fuerza">Super fuerza</string>
+    <string name="velocidad">Supervelocidad</string>
+    <string name="telequinesis">Telequinésis</string>
+    <string name="ciudad">Ciudad:</string>
+    <string-array name="ciudades">
+        <item> Ciudad Gótica</item>
+        <item> Ciudad Central</item>
+        <item> Metrópolis</item>
+        <item> Temiscira</item>
+    </string-array>
     <!--jaskjsa-->
 </resources>
