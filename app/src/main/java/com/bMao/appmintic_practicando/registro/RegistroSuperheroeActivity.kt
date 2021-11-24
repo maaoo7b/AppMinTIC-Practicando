@@ -1,9 +1,11 @@
-package com.bMao.appmintic_practicando
+package com.bMao.appmintic_practicando.registro
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
+import com.bMao.appmintic_practicando.MainActivity
+import com.bMao.appmintic_practicando.R
 import com.google.android.material.textfield.TextInputEditText
 
 
@@ -31,18 +33,23 @@ class RegistroSuperheroeActivity : AppCompatActivity() {
             if(nombreEditText.text.isEmpty()){
                 Toast.makeText(this,"Debe digitar un nombre y estatura",Toast.LENGTH_LONG).show()
             }else{
-                val nombre = nombreEditText.text
+                val nombre = nombreEditText.text.toString()
                 val estatura : Float = estaturaEditText.text.toString().toFloat()
                 var poderes = ""
                 val ciudad = ciudadSpinner.selectedItem.toString()
-                val genero = if(masculinoRadioButton.isChecked) getString(R.string.masculino) else getString(R.string.femenino)
+                val genero = if(masculinoRadioButton.isChecked) getString(R.string.masculino) else getString(
+                    R.string.femenino
+                )
                 if (fuerzaCheckBox.isChecked) poderes = getString(R.string.super_fuerza)
                 if (velocidadCheckBox.isChecked) poderes = poderes +" "+ getString(R.string.velocidad)
                 if (telequinesisCheckBox.isChecked) poderes+= poderes +" "+ getString(R.string.telequinesis)
 
                 infoTextView.text = getString(R.string.info, nombre, estatura, genero, poderes, ciudad)
 
+                //val superheroe = Superheroe(nombre,estatura,poderes,ciudad,genero)
+
                 val intent = Intent(this, MainActivity::class.java)
+                intent.putExtra("nombre",nombre)
                 startActivity(intent)
             }
         }

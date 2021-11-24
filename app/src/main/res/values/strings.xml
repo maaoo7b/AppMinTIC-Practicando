@@ -16,6 +16,16 @@
     <string name="velocidad">Super velocidad</string>
     <string name="telequinesis">Telequinésis</string>
     <string name="ciudad">Ciudad:</string>
+    <string name="superman">Superman</string>
+    <string name="batman">Batman</string>
+    <string name="nombreBatman">Bruce Wayne</string>
+    <string name="alias">Alias:</string>
+    <string name="city">Ciudad</string>
+    <string name="ciudad_central">Ciudad Central</string>
+    <string name="occupation">Ocupación:</string>
+    <string name="reporter">Reportero</string>
+    <string name="fb">Facebook:</string>
+    <string name="facebook_example">facebook.com/TheFlash</string>
     <string-array name="ciudades">
         <item> Ciudad Gótica</item>
         <item> Ciudad Central</item>
