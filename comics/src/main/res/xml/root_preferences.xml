@@ -1,26 +1,19 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <PreferenceCategory app:title="@string/sync_header">
+    <PreferenceCategory app:title="@string/title_notifications">
 
-        <SwitchPreferenceCompat
-            app:key="sync"
-            app:title="@string/sync_title" />
-
-        <SwitchPreferenceCompat
-            app:dependency="sync"
-            app:key="attachment"
-            app:summaryOff="@string/attachment_summary_off"
-            app:summaryOn="@string/attachment_summary_on"
-            app:title="@string/attachment_title" />
         <CheckBoxPreference
             android:defaultValue="false"
-            android:key="check_box_preference_1"
-            android:title="Check box preference" />
+            android:key="notifications"
+            android:title="@string/title_notifications"
+            android:icon="@drawable/ic_notifications"/>
         <CheckBoxPreference
+            app:dependency="notifications"
             android:defaultValue="false"
-            android:key="check_box_preference_1"
-            android:title="Check box preference" />
+            android:key="sound_notification"
+            android:title="Activar sonido notificación"
+            android:icon="@drawable/ic_volume"/>
 
     </PreferenceCategory>
 

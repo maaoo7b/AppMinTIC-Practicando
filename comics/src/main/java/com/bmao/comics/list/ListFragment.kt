@@ -11,6 +11,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bmao.comics.R
 import com.bmao.comics.databinding.FragmentListBinding
+import com.bmao.comics.main.MainActivity
 import com.bmao.comics.model.Superheroe
 import com.bmao.comics.model.SuperheroeItem
 import com.google.gson.Gson
@@ -20,6 +21,11 @@ class ListFragment : Fragment() {
     private lateinit var listaSuperheroe : ArrayList<SuperheroeItem>
     private lateinit var listBinding : FragmentListBinding
     private lateinit var superheroesAdapter : SuperheroesAdapter
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -32,6 +38,7 @@ class ListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        (activity as MainActivity?)?.hideIcon()
         listaSuperheroe = loadMockSuperheroeJSON()
         superheroesAdapter = SuperheroesAdapter(listaSuperheroe,onItemClicked = {onSuperheroeClicked(it)})
         listBinding.superheroesRecyclerView.apply{
