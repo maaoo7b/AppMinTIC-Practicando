@@ -1,3 +1,55 @@
 <resources>
-    <string name="app_name">Comics</string>
+    <string name="app_name">Practicando</string>
+    <string name="titulo">Flash</string>
+    <string name="nombre">Nombre:</string>
+    <string name="nombre_flash">Barry Allen</string>
+    <string name="poderes">Poderes:</string>
+    <string name="flash_powers">Super velocidad, viaje en el tiempo, sanación.</string>
+    <string name="registro">Registro de Superheroes</string>
+    <string name="registrar">Registrar</string>
+    <string name="estatura">Estatura</string>
+    <string name="genero">Género:</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="info">Nombre: %s \n, Estatura: %f \n, Género: %s \n, Poderes: %s \n, Ciudad: %s</string>
+    <string name="super_fuerza">Super fuerza</string>
+    <string name="velocidad">Super velocidad</string>
+    <string name="telequinesis">Telequinésis</string>
+    <string name="ciudad">Ciudad:</string>
+    <string name="superman">Superman</string>
+    <string name="batman">Batman</string>
+    <string name="nombreBatman">Bruce Wayne</string>
+    <string name="alias">Alias:</string>
+    <string name="city">Ciudad</string>
+    <string name="ciudad_central">Ciudad Central</string>
+    <string name="occupation">Ocupación:</string>
+    <string name="reporter">Reportero</string>
+    <string name="fb">Facebook:</string>
+    <string name="facebook_example">facebook.com/TheFlash</string>
+    <string-array name="ciudades">
+        <item> Ciudad Gótica</item>
+        <item> Ciudad Central</item>
+        <item> Metrópolis</item>
+        <item> Temiscira</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_activity_bottom">activity_bottom</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>

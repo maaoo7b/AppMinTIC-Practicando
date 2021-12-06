@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
-import com.bMao.appmintic_practicando.MainActivity
+import com.bMao.appmintic_practicando.Main.MainActivity
 import com.bMao.appmintic_practicando.R
 import com.google.android.material.textfield.TextInputEditText
 

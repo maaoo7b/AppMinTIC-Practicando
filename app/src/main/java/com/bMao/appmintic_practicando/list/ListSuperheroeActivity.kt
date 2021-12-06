@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.bMao.appmintic_practicando.MainActivity
+import com.bMao.appmintic_practicando.Main.MainActivity
 import com.bMao.appmintic_practicando.R
 import com.bMao.appmintic_practicando.model.Superheroe
 import com.bMao.appmintic_practicando.model.SuperheroeItem

@@ -1,4 +1,4 @@
-package com.bMao.appmintic_practicando
+package com.bMao.appmintic_practicando.Main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
